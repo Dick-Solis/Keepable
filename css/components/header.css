@@ -1,0 +1,113 @@
+.header {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--gray-100);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbar h2 {
+  color: #ffffff;
+}
+
+.navbar spam {
+  color: #999B9E;
+}
+
+.navbar__keepable {
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 30px;
+}
+
+.navbar__keepable div {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.navbar__keepable p {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+/* .navbar__menu-icon,
+.navbar__menu-icon-close {
+  height: 1.5em;
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-500);
+}
+
+.navbar-links {
+  display: flex;
+  row-gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links .link {
+  border-radius: 4px;
+  padding: 0.5em 0.75em;
+  transition: background-color 0.5s;
+}
+
+.navbar-links .link:hover {
+  background-color: var(--primary-100);
+}
+
+.navbar-icons {
+  display: none;
+} */
+
+/* Para la hamburguesa
+
+  @media screen and (max-width: 768px) {
+  .navbar-icons {
+    display: block;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar__menu-icon {
+    display: block;
+  }
+
+  .navbar--open .navbar__menu-icon {
+    display: none;
+  }
+
+  .navbar--open .navbar__menu-icon-close {
+    display: block;
+  }
+
+  .navbar--open .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--gray-100);
+  }
+} */

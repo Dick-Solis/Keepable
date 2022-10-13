@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Login Notes</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Stylesheet-->
+    <!-- <link rel="stylesheet" href="./css/components/toastr/toastr.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/login.css">
+</head>
+<body>
+    <form class="form-login animate__animated animate__fadeInDown">
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" name="loginUsername" placeholder="Email or Phone" class="username">
+
+        <label for="password">Password</label>
+        <input type="password" name="loginPassword" placeholder="Password" class="password">
+
+        <button type="submit" class="mb-2">Log In</button>
+        <p class="mt-2" style="font-size: 12px ;">Don't have an account yet? <span class="btn-register"> sign up here </span> </p>
+    </form>
+      
+    <form class="form-register none animate__animated animate__fadeInUp">
+      <h3>Register Here</h3>
+
+      <label for="username">Username</label>
+      <input type="text" name="registerUsername" placeholder="Email or Phone" class="username">
+
+      <label for="email">Email</label>
+      <input type="text" name="registerEmail" placeholder="Email" class="email">
+      
+      <label for="password">Password</label>
+      <input type="password" name="registerPassword" placeholder="Password" class="password">
+      
+      <label for="password">Confirm Password</label>
+      <input type="password" name="registerConfirmPassword" placeholder="Confirm Password" class="confirm-password">
+      
+      <button type="submit" class="mb-2" >Sign Up</button>
+      <p class="mt-2" style="font-size: 12px ;">I already have an account <span class="btn-login"> Log In </span> </p>
+    </form>
+
+    <!-- <script src="css/components/toastr/toastr.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/notification.js"></script>
+    <script src="./js/store_Notes.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

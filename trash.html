@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keepable</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar__keepable">
+        <div><h2> {keep<spam>able</spam>}</h2></div>
+        <div><p>Welcome to {keepable} <span class="username"></span></p></div>
+        <div class="logout"><button id="button-submit" type="submit" class="button--neon" style="color: white">Logout</button></div>
+      </div>
+    </header>
+    <main>
+      <div class = "flex">
+        <div class="flex">
+          <div class="options">
+            <div>
+              <div class="options__notes--1">
+                <a href="index.html" class="options__notes flex gap-6">
+                  <img src="/images/llaves_notes.png" alt="Llaves">Notes
+                </a>
+              </div>
+              <div class="options__notes--1 active">
+                <a href="#" class="options__trash flex gap-6">
+                  <img src="images/trash.png" alt="trash" class="trash-icon">Trash
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__notes container__notes--position">
+          <div class = "position">
+            <!-- Spinner -->
+            <div class="spinner-container">
+              <div class="spinnerWrap">
+                <div class="spinner" id="spinner1"></div>
+              </div>
+            </div>
+            <!-- end Spinner -->
+            <div class = "flex gap-4 flex-wrap flex-center js-notes">
+              <!-- <div class="note">
+                <img src="images/pin.svg" alt="pin" class="note__pin">
+                <h3 class="">This is the title</h3>
+                <p class="note__paragraph">This is the body for the NOTE</p>
+                <div class="note__action">
+                  <img src="images/colors.svg" alt="paleta">
+                  <img src="images/delete.svg" alt="tacho">
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/store_Notes.js"></script>
+    <script src="./js/trash.js"></script>
+  </body>
+</html>

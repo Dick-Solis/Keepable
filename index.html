@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keepable</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar__keepable">
+        <div><h2> {keep<spam>able</spam>}</h2></div>
+        <div><p>Welcome to {keepable} <span class="username"></span></p></div>
+        <div class="logout"><button id="button-submit" type="submit" class="button--neon" style="color: white">Logout</button></div>
+      </div>
+    </header>
+    <main>
+      <div class = "flex">
+        <div class="flex">
+          <div class="options">
+            <div>
+              <div class="options__notes--1 active">
+                <a href="#" class="options__notes flex gap-6">
+                  <img src="/images/llaves_notes.png" alt="Llaves">Notes
+                </a>
+              </div>
+              <div class="options__notes--1">
+                <a href="trash.html" class="options__trash flex gap-6">
+                  <img src="images/trash.png" alt="trash" class="trash-icon">Trash
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__notes container__notes--position">
+          <div class= "mb-8 full-width">
+            <div class="container-note js-container-note">
+              <div class="container-note__body">
+                <form action="" class= "js-new-note" data-color="white">
+                  <div class="container-inputs flex flex-column">
+                    <div class="mb-2">
+                      <input name="title" type="text" placeholder="Title" class="input-title js-title-color">
+                      <p class="message-error message__error-title"></p>
+                    </div>
+                    <div class="mb-2">
+                      <textarea name="description" class="input-body js-description-color" placeholder="Take a Note..."></textarea>
+                      <p class="message-error message__error-description" style="line-height: 0;"></p>
+                    </div>
+                  </div>
+                  <div class="container flex flex-justify">
+                    <div class="paleta">
+                      <img src="./images/paleta.png" alt="Colors" class="js-paleta-form cursor-pointer">
+                    </div>
+                    <div class=""><button id="button-submit" type="submit" class="button--neon" >Keep it!</button></div>
+                  </div>
+                </form>
+              </div>
+              <div class="note__color visibility js-note__color">
+                <div data-color = "white" class="note__color--circule bg-white"></div>
+                <div data-color = "orange" class="note__color--circule bg-orange"></div>
+                <div data-color = "blue" class="note__color--circule bg-blue"></div>
+                <div data-color = "yellow" class="note__color--circule bg-yellow"></div>
+                <div data-color = "red" class="note__color--circule bg-red"></div>
+                <div data-color = "gray" class="note__color--circule bg-gray"></div>
+                <div data-color = "salmon" class="note__color--circule bg-salmon"></div>
+                <div data-color = "crimson" class="note__color--circule bg-crimson"></div>
+                <div data-color = "firebrick" class="note__color--circule bg-firebrick"></div>
+                <div data-color = "darkred" class="note__color--circule bg-darkred"></div>
+              </div>
+            </div>
+          </div>
+          <div class = "position full-width">
+            <!-- Spinner -->
+            <div class="spinner-container">
+              <div class="spinnerWrap">
+                <div class="spinner" id="spinner1"></div>
+              </div>
+            </div>
+            <!-- end Spinner -->
+            <div class="pinned mb-6">
+              <h3 class="white mb-2 ml-2">PINNED</h3>
+              <div class="none notes-pinned-empty">
+                <img class = "imagen-empty" src = "../images/empty.png">
+                <p>No notes to keep</p>
+              </div>
+              <div class="flex gap-4 flex-wrap js-notes-pinned">
+              </div>
+            </div>
+            <div class="others">
+              <h3 class="white mb-2 ml-2">OTHERS</h3>
+              <div class="none notes-others-empty">
+                <img class = "imagen-empty" src = "../images/empty.png">
+                <p>No notes to keep</p>
+              </div>
+              <div class = "flex gap-4 flex-wrap js-notes">
+              </div>
+            </div>
+
+            <div class="notes-empty m-auto none">
+              <img class = "imagen-empty" src = "../images/empty.png">
+              <p>No notes to keep</p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+      <section class="modal">
+        <div class="modal__container js-container-edit-note">
+          <form action="" class="js-edit-form">
+            <div class="modal__close">
+              <img src="./images/close.png" width="30" height="30" alt="">
+            </div>
+            <div class="mb-2">
+              <input class="modal__title js-edit-title-note" name="title" placeholder="Title" />
+            </div>
+            <div class="mb-4">
+              <textarea name="description" class="input-body modal__description js-edit-description-note" placeholder="Take a Note..."></textarea>
+              <p class="message-error js-error" style="padding-left: 8px;"></p>
+            </div>
+            <button type="submit" class="button--neon cursor-pointer full-width js-edit-button-note">
+              Edit
+            </button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <script src="./js/store_Notes.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/new_Note.js"></script>
+  </body>
+</html>

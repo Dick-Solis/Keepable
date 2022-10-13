@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+  <div class="note">
+    <img src="images/pin.svg" alt="pin" class="note__pin">
+    <h3 class="">This is the title</h3>
+    <p class="note__paragraph">This is the body for the note</p>
+    <div class="note__action">
+      <img src="images/colors.svg" alt="paleta" class="paleta">
+      <img src="images/delete.svg" alt="tacho" class="tacho">
+    </div>
+    <div class="note__color visibility">
+      <div class="note__color--circule bg-white"></div>
+      <div class="note__color--circule bg-orange"></div>
+      <div class="note__color--circule bg-blue"></div>
+      <div class="note__color--circule bg-yellow"></div>
+      <div class="note__color--circule bg-red"></div>
+      <div class="note__color--circule bg-red"></div>
+      <div class="note__color--circule bg-red"></div>
+      <div class="note__color--circule bg-red"></div>
+      <div class="note__color--circule bg-red"></div>
+      <div class="note__color--circule bg-red"></div>
+    </div>
+  </div>
+</body>
+<script>
+  const noteColor = document.querySelector(".note--color");
+  const paleta = document.querySelector(".paleta");
+  paleta.addEventListener("click", () => {
+    noteColor.classList.toggle("visibility");
+  })
+  
+</script>
+</html>
